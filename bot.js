@@ -29,7 +29,7 @@ j = 1;
         client.user.setGame(setGame[i],`http://twitch.tv/matrex`);    
 }, ms);    
     
-});
+
 const devs = ["484869429327560704"];
 const prefix = "3"
 client.on('message', async msg => {
@@ -80,7 +80,7 @@ ${videos.map(video2 => `[\`${++index}\`]${video2.title}`).join('\n')}**`).then(m
                         message.delete(15000)
  
  
-                    });
+                   
                     try {
                         var response = await msg.channel.awaitMessages(msg2 => msg2.content > 0 && msg2.content < 5, {
                             maxMatches: 1,
@@ -252,7 +252,7 @@ function play(guild, song) {
 })
 })
 }
-});
+
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'help')) { //DiamondCodes - [ X_KillerYT ]
     let pages = [`
